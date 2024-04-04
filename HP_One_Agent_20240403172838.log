@@ -1,0 +1,63 @@
+[365C:3660][2024-04-03T17:28:32]i001: Burn v3.11.2.4516, Windows v10.0 (Build 22631: Service Pack 0), path: C:\ProgramData\Package Cache\{b15d06b5-b210-4ce1-93a2-4ff6a0f041ef}\HPOneAgent.exe
+[365C:3660][2024-04-03T17:28:34]i000: Initializing string variable 'FiredFromScheduler' to value 'no'
+[365C:3660][2024-04-03T17:28:34]i009: Command Line: '"-burn.clean.room=C:\ProgramData\Package Cache\{b15d06b5-b210-4ce1-93a2-4ff6a0f041ef}\HPOneAgent.exe" -burn.filehandle.attached=572 -burn.filehandle.self=580 /s /v /qn /min /repair FiredFromScheduler=yes'
+[365C:3660][2024-04-03T17:28:38]i000: Setting string variable 'WixBundleLog' to value 'C:\WINDOWS\TEMP\HP_One_Agent_20240403172838.log'
+[365C:3660][2024-04-03T17:28:39]i000: Setting string variable 'WixBundleManufacturer' to value 'HP Inc.'
+[365C:3510][2024-04-03T17:28:44]i000: Setting string variable 'FiredFromScheduler' to value 'yes'
+[365C:3510][2024-04-03T17:28:44]i000: Setting numeric variable 'WixStdBALanguageId' to value 1033
+[365C:3510][2024-04-03T17:28:47]i000: Setting version variable 'WixBundleFileVersion' to value '1.1.0.47916'
+[365C:3660][2024-04-03T17:28:52]i100: Detect begin, 2 packages
+[365C:3660][2024-04-03T17:28:53]i101: Detected package: VC_REDIST_X64, state: Absent, cached: None
+[365C:3660][2024-04-03T17:28:53]i101: Detected package: HPOneAgentInstaller.msi, state: Present, cached: Complete
+[365C:3660][2024-04-03T17:28:53]i199: Detect complete, result: 0x0
+[365C:3660][2024-04-03T17:28:53]i200: Plan begin, 2 packages, action: Repair
+[365C:3660][2024-04-03T17:28:53]w321: Skipping dependency registration on package with no dependency providers: VC_REDIST_X64
+[365C:3660][2024-04-03T17:28:53]i000: Setting string variable 'WixBundleLog_VC_REDIST_X64' to value 'C:\WINDOWS\TEMP\HP_One_Agent_20240403172838_000_VC_REDIST_X64.log'
+[365C:3660][2024-04-03T17:28:53]i000: Setting string variable 'WixBundleLog_HPOneAgentInstaller.msi' to value 'C:\WINDOWS\TEMP\HP_One_Agent_20240403172838_001_HPOneAgentInstaller.msi.log'
+[365C:3660][2024-04-03T17:28:53]i201: Planned package: VC_REDIST_X64, state: Absent, default requested: Repair, ba requested: Repair, execute: Install, rollback: None, cache: Yes, uncache: Yes, dependency: None
+[365C:3660][2024-04-03T17:28:53]i201: Planned package: HPOneAgentInstaller.msi, state: Present, default requested: Repair, ba requested: Repair, execute: Repair, rollback: None, cache: No, uncache: No, dependency: Register
+[365C:3660][2024-04-03T17:28:53]i299: Plan complete, result: 0x0
+[365C:3660][2024-04-03T17:28:53]i300: Apply begin
+[365C:3660][2024-04-03T17:28:55]i010: Launching elevated engine process.
+[365C:3660][2024-04-03T17:29:06]i011: Launched elevated engine process.
+[365C:3660][2024-04-03T17:29:07]i012: Connected to elevated engine.
+[13EC:06D8][2024-04-03T17:29:07]i358: Pausing automatic updates.
+[13EC:06D8][2024-04-03T17:29:08]i359: Paused automatic updates.
+[13EC:06D8][2024-04-03T17:29:08]i360: Creating a system restore point.
+[13EC:06D8][2024-04-03T17:29:46]i361: Created a system restore point.
+[13EC:06D8][2024-04-03T17:29:46]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{b15d06b5-b210-4ce1-93a2-4ff6a0f041ef}, resume: Active, restart initiated: No, disable resume: No
+[365C:1138][2024-04-03T17:29:47]i336: Acquiring container: WixAttachedContainer, copy from: C:\WINDOWS\System32\DriverStore\FileRepository\hpcustomcapcomp.inf_amd64_6666c94b7ce92349\x64\HPOneAgent.exe
+[13EC:29D8][2024-04-03T17:29:58]i305: Verified acquired payload: VC_REDIST_X64 at path: C:\ProgramData\Package Cache\.unverified\VC_REDIST_X64, moving to: C:\ProgramData\Package Cache\D4F9181E70E3F1AA6C8EDFFCC15B3C3D4BABE36B\vc_redist.x64.exe.
+[13EC:29D8][2024-04-03T17:36:55]i304: Verified existing payload: HPOneAgentInstaller.msi at path: C:\ProgramData\Package Cache\{D57FF5E5-F5F3-45D3-B376-CDE2E2CA0DDD}v1.1.0.47916\HPOneAgentInstaller.msi.
+[13EC:06D8][2024-04-03T17:36:56]i301: Applying execute package: VC_REDIST_X64, action: Install, path: C:\ProgramData\Package Cache\D4F9181E70E3F1AA6C8EDFFCC15B3C3D4BABE36B\vc_redist.x64.exe, arguments: '"C:\ProgramData\Package Cache\D4F9181E70E3F1AA6C8EDFFCC15B3C3D4BABE36B\vc_redist.x64.exe" /install /quiet /norestart -burn.filehandle.self=896'
+[365C:3660][2024-04-03T17:38:30]i319: Applied execute package: VC_REDIST_X64, result: 0x0, restart: None
+[13EC:06D8][2024-04-03T17:38:30]i323: Registering package dependency provider: {D57FF5E5-F5F3-45D3-B376-CDE2E2CA0DDD}, version: 1.1.0.47916, package: HPOneAgentInstaller.msi
+[13EC:06D8][2024-04-03T17:38:30]i301: Applying execute package: HPOneAgentInstaller.msi, action: Repair, path: C:\ProgramData\Package Cache\{D57FF5E5-F5F3-45D3-B376-CDE2E2CA0DDD}v1.1.0.47916\HPOneAgentInstaller.msi, arguments: ' ARPSYSTEMCOMPONENT="1" MSIFASTINSTALL="7" Version="1.1.0.47916" PRODVER="1.1.0.47916" FiredFromScheduler="yes"'
+[365C:3660][2024-04-03T17:38:47]i319: Applied execute package: HPOneAgentInstaller.msi, result: 0x0, restart: None
+[13EC:06D8][2024-04-03T17:38:47]i325: Registering dependency: {b15d06b5-b210-4ce1-93a2-4ff6a0f041ef} on package provider: {D57FF5E5-F5F3-45D3-B376-CDE2E2CA0DDD}, package: HPOneAgentInstaller.msi
+[13EC:06D8][2024-04-03T17:38:47]i351: Removing cached package: VC_REDIST_X64, from path: C:\ProgramData\Package Cache\D4F9181E70E3F1AA6C8EDFFCC15B3C3D4BABE36B\
+[13EC:06D8][2024-04-03T17:38:47]i372: Session end, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{b15d06b5-b210-4ce1-93a2-4ff6a0f041ef}, resume: ARP, restart: None, disable resume: No
+[13EC:06D8][2024-04-03T17:38:47]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{b15d06b5-b210-4ce1-93a2-4ff6a0f041ef}, resume: ARP, restart initiated: No, disable resume: No
+[365C:3660][2024-04-03T17:38:47]i399: Apply complete, result: 0x0, restart: None, ba requested restart:  No
+[365C:3660][2024-04-03T17:38:47]i500: Shutting down, exit code: 0x0
+[365C:3660][2024-04-03T17:38:47]i410: Variable: FiredFromScheduler = yes
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleAction = 7
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleElevated = 1
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleFileVersion = 1.1.0.47916
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleInstalled = 1
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleLastUsedSource = C:\WINDOWS\System32\DriverStore\FileRepository\hpcustomcapcomp.inf_amd64_6666c94b7ce92349\x64\
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleLog = C:\WINDOWS\TEMP\HP_One_Agent_20240403172838.log
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleLog_HPOneAgentInstaller.msi = C:\WINDOWS\TEMP\HP_One_Agent_20240403172838_001_HPOneAgentInstaller.msi.log
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleLog_VC_REDIST_X64 = C:\WINDOWS\TEMP\HP_One_Agent_20240403172838_000_VC_REDIST_X64.log
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleManufacturer = HP Inc.
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleName = HP One Agent
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleOriginalSource = C:\WINDOWS\System32\DriverStore\FileRepository\hpcustomcapcomp.inf_amd64_6666c94b7ce92349\x64\HPOneAgent.exe
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleOriginalSourceFolder = C:\WINDOWS\System32\DriverStore\FileRepository\hpcustomcapcomp.inf_amd64_6666c94b7ce92349\x64\
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleProviderKey = {b15d06b5-b210-4ce1-93a2-4ff6a0f041ef}
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleSourceProcessFolder = C:\ProgramData\Package Cache\{b15d06b5-b210-4ce1-93a2-4ff6a0f041ef}\
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleSourceProcessPath = C:\ProgramData\Package Cache\{b15d06b5-b210-4ce1-93a2-4ff6a0f041ef}\HPOneAgent.exe
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleTag = 
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleUILevel = 2
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixBundleVersion = 1.1.0.47916
+[365C:3660][2024-04-03T17:38:47]i410: Variable: WixStdBALanguageId = 1033
+[365C:3660][2024-04-03T17:38:47]i007: Exit code: 0x0, restarting: No
