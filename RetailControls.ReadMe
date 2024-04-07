@@ -1,0 +1,176 @@
+_______________________________________________________________________________
+
+Retail Controls Readme File
+D370-0548-0100
+Version: 3.3.3
+Copyright © 2004-2005. NCR Corporation.
+All rights reserved.
+________________________________________________________________________________
+
+
+Sectoin 1.0  ---- Overview
+Section 2.0  ---- Files and Layout
+Section 3.0  ---- Programmatic ID Names
+Section 4.0  ---- Supported Models
+Section 5.0  ---- Supported DirectIO's
+Section 6.0  ---- Documentation
+Section 7.0  ---- Support
+
+
+Section 1.0  ---- Overview
+================================================================================
+
+Retail Controls is a new architecture in support of OPOS and JavaPOS.  Current
+specification support is for UPOS 1.7.  As more models are added to the support
+structure (refer to Section 3.0 for model support) within the Retail Controls 
+architecture, legacy OPOS 2.4.x will only be maintained for limited bug fixes.  
+All new model support and functionality will be incorporated into the Retail 
+Controls framework.
+
+
+Section 2.0  ---- File and Layout
+================================================================================
+
+The Retail Controls architecture has two fundamental layers.  The JavaPOS/OPOS
+API layer for UPOS specification support and the model layer which composes the
+fundamental HW driver layer.
+
+The OPOS API layer containing the COM interface and regestired programmatic ID 
+is installed beside the legacy OPOS 2.4.x in C:\Program Files\NCR\OPOS.  DLL 
+version information contained in the Windows file properties indentifies the 
+RC 3.x components.  OPOS 2.4.x and RC 3.3.x are fully interoperable.
+
+The JavaPOS API layer contained the Java interface and is installed beside the 
+legacy JavaPOS 2.x in C:\Program Files\NCR\NCR JavaPOS.  Files of interest are:
+
+NCRJavaPOS33.jar
+NCRRetailCommon.jar
+
+The HW driver layer and all required components are installed in
+C:\Program File\NCR\Retail Controls.
+
+
+Section 3.0  ---- Programmatic ID Names
+================================================================================
+
+For OPOS, Service Object (SO) profiles list the programmatic ID in the default
+key property.  For the new RC 3.3 OPOS SO's, all programmatic ID's fall the same
+naming convention:  NCROposSO.<DeviceCategory>.
+
+Available programmatic ID's include:
+
+NCROposSO.POSPrinter
+NCROposSO.CashDrawer
+NCROposSO.MICR
+NCROposSO.LineDisplay
+NCROposSO.MSR
+NCROposSO.Keylock
+NCROposSO.HardTotals
+NCROposSO.Scanner
+NCROposSO.Scale
+NCROposSO.ToneIndicator
+
+
+Section 4.0  ---- Supported Models
+================================================================================
+
+POSPrinter - 7167, 7197
+POSPrinter CashDrawer - 7167, 7197
+MICR - 7167, 7197
+Terminal CashDrawer - 7452/7453-1xxx/2xxx/3xxx, 7402, 7456, 7457, 7458
+LineDisplay - 5972 (VFD, Ocular LCD, LCD), 7402 2x20, 7402 APA
+MSR - 5932 USB, 5953 USB
+Keylock - 5932 USB, 5953 USB
+HardTotals - Hard Disk
+Presentation Scanner - 7880, 7882, 7883, 7892
+Bi-Optic Scanner - 7872, 7875, 7876
+Handheld Scanner - 7832, 7837, 7838
+Scale - 7872, 7875, 7876
+ToneIndicator - 5932 USB, 5953 USB
+
+
+Section 5.0  ---- Supported DirectIO's
+================================================================================
+
+Printer	- NCRDIO_PTR_SET_BITMAP_TYPE
+Printer	- NCRDIO_PTR_SET_BARCODE_WIDTH
+Printer	- NCRDIO_PTR_SOUND_AUDIBLE_TONE
+Printer	- NCRDIO_PTR_SET_MIN_LINE_CHARS_MODE
+Printer	- NCRDIO_PTR_GET_PRINTER_STATUS
+Printer	- NCRDIO_PTR_RAW_OUTPUT
+Printer	- NCRDIO_PTR_SLIP_FLIP
+Printer	- NCRDIO_PTR_SET_UD_KANJI_CHAR
+Printer	- NCRDIO_PTR_SENSOR_STATUS
+Printer	- NCRDIO_PTR_AUTOEJECT_TIMEOUT
+Printer	- NCRDIO_PTR_EJECT_RECEIPT
+Printer	- NCRDIO_PTR_7196_SET_STAMP
+Printer	- NCRDIO_PTR_GET_KIOSK_STATUS
+Printer	- NCRDIO_PTR_SET_USERD_CHAR
+Printer	- NCRDIO_PTR_SET_PAPER_LOW
+Printer	- NCRDIO_PTR_SET_BLACK_MARK
+Printer	- NCRDIO_PTR_SET_MINIMUM_REC_LEN
+Printer	- NCRDIO_PTR_SET_REC_RETAIN_LEN
+Printer	- NCRIO_PTR_SET_COLOR_PAPER
+Printer	- NCRDIO_PTR_SET_REG_PARAM
+Printer	- NCRDIO_PTR_SET_DATACAP_PARAM
+Printer	- NCR_PTR_BM_ASIS
+Printer	- NCR_PTR_DIOE_SENSOR_UPDATE
+
+MICR - NCRDIO_MICR_CLEAR_EXCEPTION
+MICR - NCRDIO_MICR_ADD_EXCEPTION
+MICR - NCRDIO_MICR_SET_REMOVE_NON_DIGITS
+
+CashDrawer - NCRDIO_CASH_SET_WAITFORDRAWERCLOSE_FILE
+
+Printer/CD/MICR - NCRDIO_DEVICE_GET_CCL_DATA
+
+ToneIndicator - NCRDIO_SET_ERROR_TONE
+ToneIndicator - NCRDIO_SET_KEYCLICK_TONE
+
+LineDisplay - DISP_DI_CONTROLOBJECT
+LineDisplay - DISP_DI_ISDISPLAYON
+
+Keylock - NCRDIO_KEYBOARD_TYPE
+
+Scanner - NCRDIO_SCAN_TONE
+Scanner	- NCRDIO_SCAN_RESET
+Scanner	- NCRDIO_SCAN_STATUS
+Scanner	- NCRDIO_SCAN_READROM
+Scanner	- NCRDIO_SCAN_ROM_VERSION
+Scanner	- NCRDIO_SCAN_PACESETTER
+Scanner	- NCRDIO_SCAN_DIRECT
+Scanner	- NCRDIO_SCAN_NOT_ON_FILE
+Scanner	- NCRDIO_SCAN_SUSPEND
+Scanner	- NCRDIO_SCAN_START
+Scanner	- SCAN_TONE_BEEP
+Scanner	- SCAN_TONE_ENABLE
+Scanner	- SCAN_TONE_DISABLE
+Scanner	- PACESETTER_READ_GOOD
+Scanner	- PACESETTER_READ_NO_READS
+Scanner	- PACESETTER_READ_OVERPRINT
+Scanner	- PACESETTER_READ_UNDERPRINT
+Scanner	- PACESETTER_READ_MISS_MARGIN
+Scanner	- PACESETTER_RESET
+Scanner	- PACESETTER_ENABLE_MODE_3
+Scanner	- PACESETTER_DISABLE_MODE_3
+
+Scale - NCRDIO_SCAL_STATUS
+Scale - NCRDIO_SCAL_READROM
+Scale - NCRDIO_SCAL_ROM_VERSION
+Scale - NCRDIO_SCAL_LIVE_WEIGHT
+Scale - NCRDIO_SCAL_DIRECT
+
+
+Section 6.0  ---- Documentation
+================================================================================
+
+To Be Added
+
+
+Section 7.0  ---- Support
+================================================================================
+
+For support, contact you NCR support representative or contact NCR
+on the World Wide Web @
+    
+    http://www.ncr.com
