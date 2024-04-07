@@ -1,0 +1,32 @@
+<?xml encoding="UTF-8"?>
+
+<!-- Revision: 1.0.0 NCRTestDescr.dtd -->
+
+<!ELEMENT NCRTestDescr (Test+)>
+
+<!ELEMENT Test (Desc, Params, Results)>
+<!ATTLIST Test
+          number CDATA #REQUIRED
+          attended (yes | no) #REQUIRED
+          destructive (yes | no) #REQUIRED
+          exclusiveAccess (yes | no) #REQUIRED>
+          
+<!ELEMENT Desc (#PCDATA)>
+          
+<!ELEMENT Params (Param*)>
+<!ATTLIST Params
+          separator CDATA #REQUIRED>
+
+<!ELEMENT Param (Desc, UIPrompt)>
+<!ATTLIST Param
+          paramType (string | integer) #REQUIRED
+          defaultValue CDATA #IMPLIED
+          isTimeout (yes | no) #IMPLIED>
+
+<!ELEMENT UIPrompt (#PCDATA)>
+
+<!ELEMENT Results (Result+)>
+<!ATTLIST Results
+          separator CDATA #REQUIRED>
+
+<!ELEMENT Result (Desc)>

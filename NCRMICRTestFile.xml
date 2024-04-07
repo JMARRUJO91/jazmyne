@@ -1,0 +1,73 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE NCRTestDescr SYSTEM "NCRTestDescr.dtd">
+
+<NCRTestDescr>
+
+<!--******************** Test 1: Begin insertion ******************** -->
+<Test number="1" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Begin insertion</Desc>
+    <Params separator=",">
+        <Param paramType="integer"  defaultValue="5000" isTimeout="yes">
+            <Desc>Timeout (in milliseconds)</Desc>
+            <UIPrompt>Timeout (in milliseconds)</UIPrompt>
+        </Param>
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 2: End insertion ******************** -->
+<Test number="2" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>End insertion</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>MICR data</Desc></Result>
+        <Result><Desc>Account number</Desc></Result>
+        <Result><Desc>Amount</Desc></Result>
+        <Result><Desc>Bank number</Desc></Result>
+        <Result><Desc>EPC data</Desc></Result>
+        <Result><Desc>Serial number</Desc></Result>
+        <Result><Desc>Transit number</Desc></Result>
+        <Result><Desc>Check type</Desc></Result>
+        <Result><Desc>Country code</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 3: Begin removal ******************** -->
+<Test number="3" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Begin removal</Desc>
+    <Params separator=",">
+        <Param paramType="integer" defaultValue="5000" isTimeout="yes">
+            <Desc>Timeout (in milliseconds)</Desc>
+            <UIPrompt>Timeout (in milliseconds)</UIPrompt>
+        </Param>
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 4: End removal ******************** -->
+<Test number="4" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>End removal</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--************* Test 5: Test Printer Communications ************* -->
+<Test number="5" attended="no" destructive="no" exclusiveAccess="yes">
+    <Desc>Test printer communications</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Communication status</Desc></Result>
+    </Results>
+</Test>
+
+
+</NCRTestDescr>

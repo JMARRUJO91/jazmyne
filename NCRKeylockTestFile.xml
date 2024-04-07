@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE NCRTestDescr SYSTEM "NCRTestDescr.dtd">
+
+<!-- ************************************************************************* -->
+<!-- *** These tests are implemented in the base model ANCRKeylockModel.   *** -->
+<!-- *** Derived models may add additional tests                           *** -->
+<!-- ************************************************************************* -->
+
+<NCRTestDescr>
+
+<!--******************** Test 1: Get Keylock Position ************* -->
+<Test number="1" attended="no" destructive="no" exclusiveAccess="no">
+    <Desc>Get Current Keylock Position</Desc>
+    <Params separator=",">
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of Test</Desc></Result>
+        <Result><Desc>Current Keylock Position</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 2: Hardware Detection *************** -->
+<Test number="2" attended="no" destructive="no" exclusiveAccess="no">
+    <Desc>Hardware Detection</Desc>
+    <Params separator=",">
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of Hardware</Desc></Result>
+    </Results>
+</Test>
+
+</NCRTestDescr>

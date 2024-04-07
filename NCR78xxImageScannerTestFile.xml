@@ -1,0 +1,126 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE NCRTestDescr SYSTEM "NCRTestDescr.dtd">
+
+<!-- ************************************************************************* -->
+<!-- *** Test 1:Internal                                                    *** -->
+<!-- *** Test 2: Test Imagescanner Communication                            *** -->
+<!-- *** Test 10:Get Still Image                                            *** -->
+<!-- *** Test 11:Get MetaData                                               *** -->
+<!-- ************************************************************************* -->
+<NCRTestDescr>
+  <!--******************** Test 1: Internal ******************** -->
+  <Test number="1" attended="no" destructive="no" exclusiveAccess="yes">
+    <Desc>Internal</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+      <Result>
+        <Desc>Status of the operation</Desc>
+      </Result>
+    </Results>
+  </Test>
+
+  <!--************* Test 2: Test imagescanner Communications ************* -->
+  <Test number="2" attended="no" destructive="yes" exclusiveAccess="yes">
+    <Desc>Test Device Communication</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+      <Result>
+        <Desc>Status</Desc>
+      </Result>
+    </Results>
+  </Test>
+
+  <!--******************** Test 10:Get Still Image ****************** -->
+  <Test number="10" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Get Still Image</Desc>
+    <Params separator=",">
+    </Params>
+
+    <Results separator=",">
+      <Result>
+        <Desc>Status of test</Desc>
+      </Result>
+      <Result>
+        <Desc>ImageHeight(in Pixels)</Desc>
+      </Result>
+      <Result>
+        <Desc>ImageWidth(in Pixels)</Desc>
+      </Result>
+      <Result>
+        <Desc>ImageLentgh(in Bytes)</Desc>
+      </Result>
+      <Result>
+        <Desc>BitsPerPixel</Desc>
+      </Result>
+      <Result>
+        <Desc>FrameType</Desc>
+      </Result>
+      <Result>
+        <Desc>ImageType</Desc>
+      </Result>
+      <Result>
+        <Desc>ImagePath</Desc>
+      </Result>
+    </Results>
+  </Test>
+
+  <!--******************** Test 11: Get MetaData ********************* -->
+  <Test number="11" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Get Metadata</Desc>
+    <Params separator=",">
+    </Params>
+
+    <Results separator=",">
+      <Result>
+        <Desc>Status of test</Desc>
+      </Result>
+      <Result>
+        <Desc>MetaData Size(in Bytes)</Desc>
+      </Result>
+      <Result>
+        <Desc>Metadata Bytes</Desc>
+      </Result>
+    </Results>
+  </Test>
+  
+  <!--RPSUPOS-1541-->
+  <!--******************** Test 12: Hardware Tallies ******************** -->
+  <!--<Test number="12" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Hardware Tally</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+      <Result>
+        <Desc>Status of the operation</Desc>
+      </Result>
+      <Result>
+        <Desc>File Version:</Desc>
+      </Result>
+      <Result>
+        <Desc>Build Date:</Desc>
+      </Result>      
+    </Results>
+  </Test>-->
+
+  <!--******************** Test 13: Init Scanwatch ******************** -->
+  <Test number="13" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Init Scanwatch Process</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+      <Result>
+        <Desc>Status of the operation</Desc>
+      </Result>      
+    </Results>
+  </Test>
+
+  <!--******************** Test 14: Reset Metadata Status ******************** -->
+  <Test number="14" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Reset Metadata Status</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+      <Result>
+        <Desc>Status of the operation</Desc>
+      </Result>
+    </Results>
+  </Test>
+
+</NCRTestDescr>

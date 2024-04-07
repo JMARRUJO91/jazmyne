@@ -1,0 +1,91 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE NCRTestDescr SYSTEM "NCRTestDescr.dtd">
+
+<!-- ************************************************************************* -->
+<!-- *** These tests are implemented in the base model ANCRToneIndicator.  *** -->
+<!-- *** Derived models may add additional tests                           *** -->
+<!-- ************************************************************************* -->
+
+<NCRTestDescr>
+
+<!--******************** Test 1: Play Simple Tone ****************** -->
+<Test number="1" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Play Simple Tone</Desc>
+    <Params separator=",">
+        <Param paramType="integer"  defaultValue="500">
+            <Desc>Pitch (in Hertz)</Desc>
+            <UIPrompt>Pitch (in Hertz)</UIPrompt>
+        </Param>
+        <Param paramType="integer" defaultValue="500" isTimeout="yes">
+            <Desc>Duration (in milliseconds)</Desc>
+            <UIPrompt>Duration (in milliseconds)</UIPrompt>
+        </Param>
+        <Param paramType="integer"  defaultValue="100">
+            <Desc>Volume (as a percentage of maximum volume)</Desc>
+            <UIPrompt>Volume (as a percentage of maximum)</UIPrompt>
+        </Param>
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of test</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 2: Play Tone Sequence ******************** -->
+<Test number="2" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Play Tone Sequence</Desc>
+    <Params separator=",">
+        <Param paramType="integer"  defaultValue="500">
+            <Desc>Pitch of first tone  (in Hertz)</Desc>
+            <UIPrompt>Tone 1 Pitch (in Hertz)</UIPrompt>
+        </Param>
+        <Param paramType="integer" defaultValue="500"  isTimeout="yes">
+            <Desc>Duration of first tone (in milliseconds)</Desc>
+            <UIPrompt>Tone 1 Duration (in milliseconds)</UIPrompt>
+        </Param>
+        <Param paramType="integer" defaultValue="100">
+            <Desc>Volume of first tone (as a percentage of maximum volume)</Desc>
+            <UIPrompt>Tone 1 Volume (as a percentage)</UIPrompt>
+        </Param>
+        <Param paramType="integer" defaultValue="1000"  isTimeout="yes">
+            <Desc>Pause between first and second tone (in milliseconds)</Desc>
+            <UIPrompt>Intertone Wait (in milliseconds)</UIPrompt>
+        </Param>
+        <Param paramType="integer" defaultValue="500">
+            <Desc>Pitch of second tone  (in Hertz)</Desc>
+            <UIPrompt>Tone 2 Pitch (in Hertz)</UIPrompt>
+        </Param>
+        <Param paramType="integer" defaultValue="500"  isTimeout="yes">
+            <Desc>Duration of second tone (in milliseconds)</Desc>
+            <UIPrompt>Tone 2 Duration (in milliseconds)</UIPrompt>
+        </Param>
+        <Param paramType="integer" defaultValue="100">
+            <Desc>Volume of second tone (as a percentage of maximum volume)</Desc>
+            <UIPrompt>Tone 2 Volume (as a percentage)</UIPrompt>
+        </Param>
+        <!-- TAR 442738: Remove repeat count to prevent timeout errors -->
+        <!--<Param paramType="integer" defaultValue="1">-->
+        <!--    <Desc>Number of times to repeat the two tones</Desc>-->
+        <!--    <UIPrompt>Repeat Count</UIPrompt>-->
+        <!--</Param>-->
+        <!--<Param paramType="integer"  defaultValue="0" isTimeout="yes">-->
+        <!--    <Desc>Pause after second tone (in milliseconds) before sequence repeats</Desc>-->
+        <!--    <UIPrompt>Intersequence Wait (in milliseconds)</UIPrompt>-->
+        <!--</Param>-->
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of test</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 3: Play Default Tone ****************** -->
+<Test number="3" attended="no" destructive="yes" exclusiveAccess="yes">
+    <Desc>Play Default Tone</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of test</Desc></Result>
+    </Results>
+</Test>
+
+</NCRTestDescr>
