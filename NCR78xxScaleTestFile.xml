@@ -1,0 +1,65 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE NCRTestDescr SYSTEM "NCRTestDescr.dtd">
+
+<!-- ************************************************************************* -->
+<!-- *** These tests are specific to the NCR78xx Scales                    *** -->
+<!-- ************************************************************************* -->
+
+<NCRTestDescr>
+
+<!--******************** Test 1: Internal ******************** -->
+<Test number="1" attended="no" destructive="no" exclusiveAccess="yes">
+    <Desc>Internal</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+
+<!--******************** Test 11: ReadWeight ******************** -->
+<Test number="11" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>ReadWeight</Desc>
+    <Params separator=",">
+        <Param paramType="integer"  defaultValue="4000" isTimeout="yes">
+            <Desc>Timeout (in milliseconds)</Desc>
+            <UIPrompt>Timeout (in milliseconds)</UIPrompt>
+        </Param>
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>Weight</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 12: LiveWeight ******************** -->
+<Test number="12" attended="no" destructive="yes" exclusiveAccess="yes">
+    <Desc>LiveWeight</Desc>
+    <Params separator=",">
+        <Param paramType="integer"  defaultValue="4000" isTimeout="yes">
+            <Desc>Timeout (in milliseconds)</Desc>
+            <UIPrompt>Timeout (in milliseconds)</UIPrompt>
+        </Param>
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>Weight or Scale Status</Desc></Result>
+    </Results>
+</Test>
+<!--******************** Test 13: Hardware Tallies ******************** -->
+<Test number="13" attended="no" destructive="yes" exclusiveAccess="yes">
+    <Desc>Hardware Tally</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>File Version:</Desc></Result>
+        <Result><Desc>Build Date:</Desc></Result>
+        <!--<Result><Desc>Scale Calibrated Count:</Desc></Result>-->
+        <Result><Desc>Weight Units:</Desc></Result>
+        <Result><Desc>Maximum Weight:</Desc></Result>
+    </Results>
+</Test>
+
+</NCRTestDescr>

@@ -1,0 +1,68 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE NCRTestDescr SYSTEM "NCRTestDescr.dtd">
+
+<!-- ************************************************************************* -->
+<!-- *** These tests are implemented in the base model ANCRMSRModel.       *** -->
+<!-- *** Derived models may add additional tests                           *** -->
+<!-- ************************************************************************* -->
+
+<NCRTestDescr>
+
+<!--******************** Test 1: Get Part Number ****************** -->
+<Test number="1" attended="no" destructive="yes" exclusiveAccess="yes">
+    <Desc>Get MSR Part Number</Desc>
+    <Params separator=",">
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of test</Desc></Result>
+        <Result><Desc>MSR Part Number</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 2: Read MSR Card ******************** -->
+<Test number="2" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Read MSR Card</Desc>
+    <Params separator=",">
+        <Param paramType="integer" defaultValue="15000" isTimeout="yes">
+            <Desc>Timeout (in milliseconds)</Desc>
+            <UIPrompt>Timeout (in milliseconds)</UIPrompt>
+        </Param>
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of test</Desc></Result>
+        <Result><Desc>Length of track 1 data</Desc></Result>
+        <Result><Desc>Track 1 data</Desc></Result>
+        <Result><Desc>Length of track 2 data</Desc></Result>
+        <Result><Desc>Track 2 data</Desc></Result>
+        <Result><Desc>Length of track 3 data</Desc></Result>
+        <Result><Desc>Track 3 data</Desc></Result>
+        <Result><Desc>Length of track 4 data</Desc></Result>
+        <Result><Desc>Track 4 data</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 3: Get CCL Data ********************* -->
+<Test number="3" attended="yes" destructive="no" exclusiveAccess="yes">
+    <Desc>Get CCL Data</Desc>
+    <Params separator=",">
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of test</Desc></Result>
+        <Result><Desc>Description</Desc></Result>
+        <Result><Desc>ClassModel</Desc></Result>
+        <Result><Desc>Part Number</Desc></Result>
+        <Result><Desc>Serial Number</Desc></Result>
+        <Result><Desc>Description</Desc></Result>
+        <Result><Desc>Version</Desc></Result>
+	<Result><Desc>Description</Desc></Result>
+	<Result><Desc>Version</Desc></Result>
+	<Result><Desc>Description</Desc></Result>
+	<Result><Desc>Version</Desc></Result>
+    </Results>
+</Test>
+
+
+</NCRTestDescr>

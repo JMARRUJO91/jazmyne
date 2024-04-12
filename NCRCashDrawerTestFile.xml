@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE NCRTestDescr SYSTEM "NCRTestDescr.dtd">
+
+<NCRTestDescr>
+
+<!--******************** Test 1: Open cash drawer ******************** -->
+<Test number="1" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Open cash drawer</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--****************** Test 2: Get last drawer status ******************* -->
+<Test number="2" attended="no" destructive="no" exclusiveAccess="no">
+    <Desc>Get last drawer status</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>Drawer status</Desc></Result>
+    </Results>
+</Test>
+
+</NCRTestDescr>

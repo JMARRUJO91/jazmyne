@@ -1,0 +1,106 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE NCRTestDescr SYSTEM "NCRTestDescr.dtd">
+
+<!-- ************************************************************************* -->
+<!-- *** These tests are implemented in the base model ANCRPOSPrinterModel *** -->
+<!-- *** Derived models may add additional tests                           *** -->
+<!-- ************************************************************************* -->
+
+<NCRTestDescr>
+
+<!--******************** Test 1: Begin insertion ******************** -->
+<Test number="1" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Begin insertion</Desc>
+    <Params separator=",">
+        <Param paramType="integer" defaultValue="5000" isTimeout="yes">
+            <Desc>Timeout (in milliseconds)</Desc>
+            <UIPrompt>Timeout (in milliseconds)</UIPrompt>
+        </Param>
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 2: End insertion ******************** -->
+<Test number="2" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>End insertion</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 3: Begin removal ******************** -->
+<Test number="3" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Begin removal</Desc>
+    <Params separator=",">
+        <Param paramType="integer" defaultValue="5000" isTimeout="yes">
+            <Desc>Timeout (in milliseconds)</Desc>
+            <UIPrompt>Timeout (in milliseconds)</UIPrompt>
+        </Param>
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 4: End removal ******************** -->
+<Test number="4" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>End removal</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 5: Flip slip ******************** -->
+<Test number="5" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Flip slip</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--*************** Test 6: Print diagnostic string to receipt *************** -->
+<Test number="6" attended="no" destructive="yes" exclusiveAccess="yes">
+    <Desc>Print diagnostic string</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 7: Get last printer status ******************** -->
+<Test number="7" attended="no" destructive="no" exclusiveAccess="no">
+    <Desc>Get last printer status</Desc>
+    <Params separator="+"/>
+    <Results separator="+">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>Most recent printer status</Desc></Result>
+    </Results>
+</Test>
+
+<!-- ************************************************************************* -->
+<!-- *** These tests are specific to the NCRH6xxx printers                 *** -->
+<!-- ************************************************************************* -->
+
+<!--******************** Test 10: Get CCL data ******************** -->
+<Test number="10" attended="no" destructive="no" exclusiveAccess="no">
+    <Desc>Get CCL data</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>Class number</Desc></Result>
+        <Result><Desc>Serial number</Desc></Result>
+        <Result><Desc>Boot firmware version number</Desc></Result>
+        <Result><Desc>Boot firmware part number</Desc></Result>
+        <Result><Desc>Flash firmware version number</Desc></Result>
+        <Result><Desc>Flash firmware part number</Desc></Result>
+    </Results>
+</Test>
+
+</NCRTestDescr>

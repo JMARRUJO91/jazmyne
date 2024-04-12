@@ -1,0 +1,73 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE NCRTestDescr SYSTEM "NCRTestDescr.dtd">
+
+<!-- ************************************************************************* -->
+<!-- *** These tests are specific to the NCR78xx Scanners                *** -->
+<!-- ************************************************************************* -->
+
+<NCRTestDescr>
+
+<!--******************** Test 1: Internal ******************** -->
+<Test number="1" attended="no" destructive="no" exclusiveAccess="yes">
+    <Desc>Internal</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 11: ScanData ******************** -->
+<Test number="11" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>ScanData</Desc>
+    <Params separator=",">
+        <Param paramType="integer"  defaultValue="5000" isTimeout="yes">
+            <Desc>Timeout (in milliseconds)</Desc>
+            <UIPrompt>Timeout (in milliseconds)</UIPrompt>
+        </Param>
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>ScanData</Desc></Result>
+        <Result><Desc>ScanDataLabel</Desc></Result>
+        <Result><Desc>ScanDataType</Desc></Result>
+        <Result><Desc>**Scan data may be truncated...</Desc></Result>
+        <Result><Desc>**Commas in data shall appear as spaces.</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 12: Device Information ******************** -->
+<Test number="12" attended="no" destructive="yes" exclusiveAccess="yes">
+    <Desc>Device Information</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <!--Result><Desc>Firmware:</Desc></Result-->
+        <Result><Desc>File Version:</Desc></Result>
+        <Result><Desc>Build Date:</Desc></Result>
+        <Result><Desc>Model:</Desc></Result>
+        <Result><Desc>Serial Number:</Desc></Result>
+        <Result><Desc>Firmware Part Number:</Desc></Result>
+        <Result><Desc>Firmware Version:</Desc></Result>
+        <Result><Desc>SubDevice Model:</Desc></Result>
+        <Result><Desc>SubDevice Serial Number:</Desc></Result>
+        <Result><Desc>SubDevice Firmware Part Number:</Desc></Result>
+        <Result><Desc>SubDevice Firmware Version:</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 13: Hardware Tallies ******************** -->
+<Test number="13" attended="no" destructive="yes" exclusiveAccess="yes">
+    <Desc>Hardware Tally</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>File Version:</Desc></Result>
+        <Result><Desc>Build Date:</Desc></Result>
+        <Result><Desc>Age in seconds:</Desc></Result>
+        <Result><Desc>System State:</Desc></Result>
+        <Result><Desc>Successful Flash Updates:</Desc></Result>
+    </Results>
+</Test>
+</NCRTestDescr>
+

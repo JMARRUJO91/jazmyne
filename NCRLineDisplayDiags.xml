@@ -1,0 +1,108 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE NCRTestDescr SYSTEM "NCRTestDescr.dtd">
+
+<!-- ************************************************************************* -->
+<!-- *** These tests are implemented in ANCRLineDisplayModel               *** -->
+<!-- ************************************************************************* -->
+
+<NCRTestDescr>
+
+
+<!--****** Test 0: Get CCL Data ****************************************** -->
+<Test number="0" attended="no" destructive="no" exclusiveAccess="yes">
+    <Desc>Get CCL Data</Desc>
+    <Params separator=",">
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>Part Number</Desc></Result>
+        <Result><Desc>Serial Number</Desc></Result>
+        <Result><Desc>Firmware Version Number</Desc></Result>
+    </Results>
+</Test>
+
+<!--****** Test 1: Display Generic Text ********************************** -->
+<Test number="1" attended="no" destructive="yes" exclusiveAccess="yes">
+    <Desc>Display Generic Text</Desc>
+    <Params separator=",">
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--****** Test 2: Display Specified Text ********************************** -->
+<Test number="2" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Display Specified Text</Desc>
+    <Params separator=",">
+        <Param paramType="string" defaultValue="Text">
+            <Desc>Text to display</Desc>
+            <UIPrompt>Text to display</UIPrompt>
+        </Param>
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--****** Test 3: Turn On All Display Elements **************************** -->
+<Test number="3" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Turn On All Display Elements</Desc>
+    <Params separator=",">
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--****** Test 4: Display a Character ********* -->
+<Test number="4" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Display a Character</Desc>
+    <Params separator=",">
+        <Param paramType="string" defaultValue="0041">
+            <Desc>Character to display (in 4 hex digits)</Desc>
+            <UIPrompt>Character to display (in 4 hex digits)</UIPrompt>
+        </Param>
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--****** Test 5: Start Display of All Characters in a Character Set ********* -->
+<Test number="5" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Start Display of All Characters in a Character Set</Desc>
+    <Params separator=",">
+        <Param paramType="integer" defaultValue="0" isTimeout="no">
+            <Desc>Character set to display (0 is current character set)</Desc>
+            <UIPrompt>Character set (0 is current set)</UIPrompt>
+        </Param>
+        <Param paramType="integer" defaultValue="1000" isTimeout="no">
+            <Desc>Delay between full displays of characters (in milliseconds)</Desc>
+            <UIPrompt>Delay (in milliseconds)</UIPrompt>
+        </Param>
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+
+<!--****** Test 6: Stop Display of All Characters in a Character Set ********* -->
+<Test number="6" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Stop Display of All Characters in a Character Set</Desc>
+    <Params separator=",">
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+</NCRTestDescr>

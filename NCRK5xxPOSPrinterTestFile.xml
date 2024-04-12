@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE NCRTestDescr SYSTEM "NCRTestDescr.dtd">
+
+<!-- ************************************************************************* -->
+<!-- *** These tests are implemented in the base model ANCRPOSPrinterModel *** -->
+<!-- *** Derived models may add additional tests                           *** -->
+<!-- ************************************************************************* -->
+
+<NCRTestDescr>
+
+<!-- Note: Kiosk printers have no slip station -->
+<!-- All slip specific tests have been removed -->
+
+
+<!--*************** Test 6: Print diagnostic string to receipt *************** -->
+<Test number="6" attended="no" destructive="yes" exclusiveAccess="yes">
+    <Desc>Print diagnostic string</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 7: Get last printer status ******************** -->
+<Test number="7" attended="no" destructive="no" exclusiveAccess="no">
+    <Desc>Get last printer status</Desc>
+    <Params separator="+"/>
+    <Results separator="+">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>Most recent printer status</Desc></Result>
+    </Results>
+</Test>
+
+<!--***** Test 8: Print two sided thermal diagnostic string to receipt ***** -->
+<Test number="8" attended="no" destructive="yes" exclusiveAccess="yes">
+    <Desc>Print two sided thermal string</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!-- ************************************************************************* -->
+<!-- *** These tests are specific to the NCRK5xx (kiosk) printers          *** -->
+<!-- ************************************************************************* -->
+
+<!--******************** Test 10: Get CCL data ******************** -->
+<Test number="10" attended="no" destructive="no" exclusiveAccess="no">
+    <Desc>Get CCL data</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>Class number</Desc></Result>
+        <Result><Desc>Serial number</Desc></Result>
+        <Result><Desc>Boot firmware version number</Desc></Result>
+        <Result><Desc>Boot firmware part number</Desc></Result>
+        <Result><Desc>Flash firmware version number</Desc></Result>
+        <Result><Desc>Flash firmware part number</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 11: Eject receipt ****** -->
+<Test number="11" attended="yes" destructive="yes" exclusiveAccess="yes">
+    <Desc>Cut and eject receipt</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 12: Get most recent kiosk specific status ****** -->
+<Test number="12" attended="no" destructive="no" exclusiveAccess="no">
+    <Desc>Get last kiosk specific status</Desc>
+    <Params separator="+"/>
+    <Results separator="+">
+        <Result><Desc>Status of the operation</Desc></Result>
+        <Result><Desc>Most recent kiosk specific status</Desc></Result>
+    </Results>
+</Test>
+
+</NCRTestDescr>

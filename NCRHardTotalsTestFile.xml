@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="no"?>
+
+<!DOCTYPE NCRTestDescr SYSTEM "NCRTestDescr.dtd">
+
+<!-- ************************************************************************* -->
+<!-- *** These tests are implemented in the base model ANCRHardTotalsModel *** -->
+<!-- *** Derived models may add additional tests                           *** -->
+<!-- ************************************************************************* -->
+
+<NCRTestDescr>
+
+<!--******************** Test 1: Internal Checkhealth ******************** -->
+<Test number="1" attended="no" destructive="no" exclusiveAccess="no">
+    <Desc>Internal Checkhealth -- Validate Sumchecks</Desc>
+    <Params separator=",">
+      
+    </Params>
+    
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+<!--******************** Test 2: External Checkhealth ******************** -->
+<Test number="2" attended="no" destructive="yes" exclusiveAccess="yes">
+    <Desc>External Checkhealth -- Read/Write Test</Desc>
+    <Params separator=","/>
+    <Results separator=",">
+        <Result><Desc>Status of the operation</Desc></Result>
+    </Results>
+</Test>
+
+</NCRTestDescr>
