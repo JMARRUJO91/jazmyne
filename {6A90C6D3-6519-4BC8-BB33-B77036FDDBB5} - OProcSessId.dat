@@ -1,0 +1,28 @@
+run_replay.py
+def main(
+    action_trajs_path: str,
+    traj_path: str,
+    config_file: str,
+    data_path: str,
+    suffix: str,
+):
+    if action_trajs_path is not None:
+        process_synthetic_trajs(action_trajs_path, config_file, suffix)
+    elif traj_path is not None:
+        process_single_traj(traj_path, config_file, data_path, suffix)
+    else:
+        print(
+            "No replays generated.\n"
+            "You must either provide one of the following. Either...\n"
+            "\t* --action_trajs_path for replaying synthetic trajectories\n"
+            "\t* --traj_path for replaying SWE-agent style trajectories (from ./trajectories folder)\n"
+        )
+if __name__ == "__main__":
+    parser = ArgumentParser()
+    parser.add_argument("--action_trajs_path", help="Path to action trajectories to replay", default=None)
+    parser.add_argument("--traj_path", help="Path to trajectory to replay", default=None)
+    parser.add_argument("--config_file", help="Path to template")
+    parser.add_argument("--config_file", help="Path to template", required=True)
+    parser.add_argument("--data_path", help="(Optional) Path to data file containing task instances ref'ed by replay trajectories", default=None)
+    parser.add_argument("--suffix", help="(Optional) Suffix argument appended to end of traj path", default=None)
+    args = parser.parse_args()
