@@ -1,0 +1,84 @@
+expand_more
+error
+25s
+107. browser_tests (experimental) on Mac-13
+content_copy
+This is an experimental test that was selected for this build, failures will not cause build failures
+Run on OS: 'Mac-13'
+Test command:
+vpython3 ../../testing/test_env.py ./browser_tests --test-launcher-bot-mode --asan=1 --lsan=0 --msan=0 --tsan=0 --cfi-diag=0 --test-launcher-summary-output=${ISOLATED_OUTDIR}/output.json --test-launcher-print-test-stdio=always --test-launcher-filter-file=../../testing/buildbot/filters/mac.mac-rel.browser_tests.filter
+
+Max shard runtime (46m 41s) + overhead (33s): 47m 13s (shard #13)
+Min shard runtime (34m 58s) + overhead (29s): 35m 27s (shard #14)
+Total shard runtime (1268m 46s) + overhead(16m 54s): 1285m 40s
+deterministic failures [caused step to fail]:
+All/DNRMatchResponseHeadersBrowserTest.ModifyHeaders_SingleExtension/0
+All/DNRMatchResponseHeadersBrowserTest.ModifyHeaders_SingleExtension/1
+
+shard #0 test results
+shard #0 (runtime (42m 15s) + overhead (34s): 42m 48s)
+shard #1 test results
+shard #1 (runtime (42m 4s) + overhead (33s): 42m 37s)
+shard #2 test results
+shard #2 (runtime (43m 49s) + overhead (31s): 44m 21s)
+shard #3 test results
+shard #3 (runtime (43m 3s) + overhead (36s): 43m 38s)
+shard #4 test results
+shard #4 (runtime (39m 3s) + overhead (30s): 39m 33s)
+shard #5 test results
+shard #5 (runtime (42m 34s) + overhead (54s): 43m 29s)
+shard #6 test results
+shard #6 (failed) (44m 44s)
+shard #7 test results
+shard #7 (runtime (43m 33s) + overhead (31s): 44m 4s)
+shard #8 test results
+shard #8 (runtime (44m 51s) + overhead (31s): 45m 23s)
+shard #9 test results
+shard #9 (runtime (37m 42s) + overhead (32s): 38m 13s)
+shard #10 test results
+shard #10 (runtime (43m 26s) + overhead (38s): 44m 4s)
+shard #11 test results
+shard #11 (runtime (43m 19s) + overhead (34s): 43m 53s)
+shard #12 test results
+shard #12 (runtime (43m 55s) + overhead (33s): 44m 27s)
+shard #13 test results
+shard #13 (runtime (46m 41s) + overhead (33s): 47m 13s)
+shard #14 test results
+shard #14 (runtime (34m 58s) + overhead (29s): 35m 27s)
+shard #15 test results
+shard #15 (runtime (37m 28s) + overhead (29s): 37m 58s)
+shard #16 test results
+shard #16 (runtime (42m 46s) + overhead (31s): 43m 17s)
+shard #17 test results
+shard #17 (runtime (41m 54s) + overhead (36s): 42m 30s)
+shard #18 test results
+shard #18 (runtime (41m 52s) + overhead (31s): 42m 23s)
+shard #19 test results
+shard #19 (runtime (41m 39s) + overhead (30s): 42m 9s)
+shard #20 test results
+shard #20 (runtime (44m 44s) + overhead (30s): 45m 15s)
+shard #21 test results
+shard #21 (runtime (40m 34s) + overhead (34s): 41m 8s)
+shard #22 test results
+shard #22 (runtime (45m 36s) + overhead (31s): 46m 6s)
+shard #23 test results
+shard #23 (runtime (43m 38s) + overhead (30s): 44m 9s)
+shard #24 test results
+shard #24 (failed) (38m 20s)
+shard #25 test results
+shard #25 (runtime (43m 48s) + overhead (33s): 44m 21s)
+shard #26 test results
+shard #26 (runtime (44m 42s) + overhead (48s): 45m 30s)
+shard #27 test results
+shard #27 (runtime (45m 12s) + overhead (28s): 45m 40s)
+shard #28 test results
+shard #28 (runtime (43m 35s) + overhead (30s): 44m 5s)
+shard #29 test results
+shard #29 (runtime (38m 24s) + overhead (32s): 38m 56s)
+All/DNRMatchResponseHeadersBrowserTest.ModifyHeaders_SingleExtension/0
+All/DNRMatchResponseHeadersBrowserTest.ModifyHeaders_SingleExtension/1
+execution details
+stdout [raw]
+raw_io.output[Merge script log]
+chromium_swarming.summary
+step_metadata
