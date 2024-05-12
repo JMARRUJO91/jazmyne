@@ -1,0 +1,86 @@
+Back to build
+Raw log | Switch to full mode | Account Icon marrujojazmyne@gmail.com | Logout
+Executing command [
+  '/b/s/w/ir/cache/builder/src/third_party/siso/siso',
+  'ninja',
+  '--project',
+  'rbe-chromium-untrusted',
+  '--job_id',
+  '8748193110146787377',
+  '--enable_cloud_logging',
+  '--enable_cloud_profiler',
+  '--enable_cloud_trace',
+  '--config',
+  'remote-library-link,remote-exec-link',
+  '-re_cache_enable_read=false',
+  '-failure_summary',
+  '/b/s/w/ir/x/t/tmpmgd4twpb',
+  '-C',
+  '/b/s/w/ir/cache/builder/src/out/Debug',
+  '-j',
+  '5120',
+  'chrome_public_apk',
+]
+escaped for shell: /b/s/w/ir/cache/builder/src/third_party/siso/siso ninja --project rbe-chromium-untrusted --job_id 8748193110146787377 --enable_cloud_logging --enable_cloud_profiler --enable_cloud_trace --config remote-library-link,remote-exec-link '-re_cache_enable_read=false' -failure_summary /b/s/w/ir/x/t/tmpmgd4twpb -C /b/s/w/ir/cache/builder/src/out/Debug -j 5120 chrome_public_apk
+in dir /b/s/w/ir/cache/builder/src
+at time 2024-05-11T17:00:23.909211 (1715472023.909211)
+LUCI_CONTEXT:
+  'realm': {'name': 'chromium:build'}
+  'luciexe': {'cache_dir': '/b/s/w/ir/cache'}
+  'deadline': {'soft_deadline': 1715477423.908565, 'grace_period': 30.0}
+full environment:
+  BOTO_CONFIG: /b/s/w/ir/x/a/gsutil-bbagent/.boto
+  CHROME_HEADLESS: 1
+  CIPD_ARCHITECTURE: amd64
+  CIPD_CACHE_DIR: /b/s/w/ir/cache/cipd_cache
+  CIPD_PROTOCOL: v2
+  CLOUDSDK_CONFIG: /b/s/w/ir/x/a/gcloud-bbagent
+  DOCKER_CONFIG: /b/s/w/ir/x/a/docker-cfg-bbagent
+  DOCKER_TMPDIR: /b/s/w/ir/x/a/docker-tmp-bbagent
+  FIREBASE_TOKEN: ignored-non-empty-value
+  FIREBASE_TOKEN_URL: http://127.0.0.1:37155
+  GCE_METADATA_HOST: 127.0.0.1:46201
+  GCE_METADATA_IP: 127.0.0.1:46201
+  GCE_METADATA_ROOT: 127.0.0.1:46201
+  GIT_TERMINAL_PROMPT: 0
+  HOME: /home/chrome-bot
+  INFRA_GIT_WRAPPER_HOME: /b/s/w/ir/x/a/git-home-bbagent
+  INVOCATION_ID: 4dc7aea46e554c89a3b0c14a373aa350
+  ISOLATED_RESOLVED_PACKAGE_VERSIONS_FILE: /b/s/w/itg044g6ws/cipd_info.json
+  JOURNAL_STREAM: 8:45351
+  LANG: en_US.UTF-8
+  LOGDOG_COORDINATOR_HOST: logs.chromium.org
+  LOGDOG_NAMESPACE: u/Clean_builds/Build_chrome_public_apk_without_remote_cache_with_Siso_in_native_mode/u
+  LOGDOG_STREAM_PREFIX: buildbucket/cr-buildbucket/8748193110146787377
+  LOGDOG_STREAM_PROJECT: chromium
+  LOGDOG_STREAM_SERVER_PATH: unix:/b/s/w/ir/x/ld/sock.2708379174
+  LOGNAME: chrome-bot
+  LUCI_CONTEXT: /b/s/w/ir/x/t/luci_ctx.fvi5auub.json
+  MAC_CHROMIUM_TMPDIR: /b/s/w/ir/x/t
+  NO_GCE_CHECK: False
+  PATH: /b/s/w/ir/cache/builder/src/third_party/android_sdk/public/platform-tools:/b/s/w/ir/cache/builder/src/build/android:/b/s/w/ir/bbagent_utility_packages:/b/s/w/ir/bbagent_utility_packages/bin:/b/s/w/ir/cipd_bin_packages:/b/s/w/ir/cipd_bin_packages/bin:/b/s/w/ir/cipd_bin_packages/cpython3:/b/s/w/ir/cipd_bin_packages/cpython3/bin:/b/s/w/ir/cache/cipd_client:/b/s/w/ir/cache/cipd_client/bin:/b/s/cipd_cache/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+  PWD: /b/s/w/ir/x/w
+  PYTHONIOENCODING: UTF-8
+  PYTHONPATH: packages/cipd/exe/recipe_engine
+  PYTHONUNBUFFERED: 1
+  RBE_exec_strategy: racing
+  RBE_local_resource_fraction: 0.2
+  RBE_log_dir: /b/s/w/ir/x/w/recipe_cleanup/reclient_lognlhmfwgk
+  RBE_racing_bias: 0.95
+  RBE_remote_accept_cache: false
+  RBE_server_address: unix:////b/s/w/ir/x/t/reproxy.sock
+  SHELL: /bin/bash
+  SHLVL: 0
+  SISO_EXPERIMENTS: no-fallback
+  SWARMING_BOT_ID: android-build-perf-developer-0-md36
+  SWARMING_EXTERNAL_BOT_SETUP: 1
+  SWARMING_HEADLESS: 1
+  SWARMING_SERVER: https://chromium-swarm.appspot.com
+  SWARMING_TASK_ID: 6982cb78b0db9511
+  SYSTEMD_EXEC_PID: 2697
+  TEMP: /b/s/w/ir/x/t
+  TEMPDIR: /b/s/w/ir/x/t
+  TMP: /b/s/w/ir/x/t
+  TMPDIR: /b/s/w/ir/x/t
+  USER: chrome-bot
+
