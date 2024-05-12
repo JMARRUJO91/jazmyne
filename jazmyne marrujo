@@ -1,0 +1,79 @@
+Back to build
+Raw log | Switch to full mode | Account Icon marrujojazmyne@gmail.com | Logout
+Executing command [
+  '/b/s/w/ir/cipd_bin_packages/cpython3/bin/python3',
+  '-u',
+  '/b/s/w/ir/x/w/packages/cipd/exe/depot_tools/recipes/recipe_modules/gsutil/resources/gsutil_smart_retry.py',
+  '--',
+  '/b/s/w/ir/x/w/packages/cipd/exe/depot_tools/gsutil.py',
+  '----',
+  'cp',
+  '/b/s/w/ir/x/t/reproxy_rpl.20240512-000745.2686642c-1cbe-4f4c-9f67-2aafa0b28d7f.gz',
+  'gs://chrome-goma-log/2024/05/12/reclient/reproxy_rpl.20240512-000745.2686642c-1cbe-4f4c-9f67-2aafa0b28d7f.gz',
+]
+escaped for shell: /b/s/w/ir/cipd_bin_packages/cpython3/bin/python3 -u /b/s/w/ir/x/w/packages/cipd/exe/depot_tools/recipes/recipe_modules/gsutil/resources/gsutil_smart_retry.py -- /b/s/w/ir/x/w/packages/cipd/exe/depot_tools/gsutil.py ---- cp /b/s/w/ir/x/t/reproxy_rpl.20240512-000745.2686642c-1cbe-4f4c-9f67-2aafa0b28d7f.gz gs://chrome-goma-log/2024/05/12/reclient/reproxy_rpl.20240512-000745.2686642c-1cbe-4f4c-9f67-2aafa0b28d7f.gz
+in dir /b/s/w/ir/cache/builder
+at time 2024-05-11T17:07:47.504827 (1715472467.504827)
+LUCI_CONTEXT:
+  'realm': {'name': 'chromium:build'}
+  'luciexe': {'cache_dir': '/b/s/w/ir/cache'}
+  'deadline': {'soft_deadline': 1715505940.7248929, 'grace_period': 30.0}
+full environment:
+  BOTO_CONFIG: /b/s/w/ir/x/a/gsutil-bbagent/.boto
+  CHROME_HEADLESS: 1
+  CIPD_ARCHITECTURE: amd64
+  CIPD_CACHE_DIR: /b/s/w/ir/cache/cipd_cache
+  CIPD_PROTOCOL: v2
+  CLOUDSDK_CONFIG: /b/s/w/ir/x/a/gcloud-bbagent
+  DOCKER_CONFIG: /b/s/w/ir/x/a/docker-cfg-bbagent
+  DOCKER_TMPDIR: /b/s/w/ir/x/a/docker-tmp-bbagent
+  FIREBASE_TOKEN: ignored-non-empty-value
+  FIREBASE_TOKEN_URL: http://127.0.0.1:37155
+  GCE_METADATA_HOST: 127.0.0.1:46201
+  GCE_METADATA_IP: 127.0.0.1:46201
+  GCE_METADATA_ROOT: 127.0.0.1:46201
+  GIT_TERMINAL_PROMPT: 0
+  HOME: /home/chrome-bot
+  INFRA_GIT_WRAPPER_HOME: /b/s/w/ir/x/a/git-home-bbagent
+  INVOCATION_ID: 4dc7aea46e554c89a3b0c14a373aa350
+  ISOLATED_RESOLVED_PACKAGE_VERSIONS_FILE: /b/s/w/itg044g6ws/cipd_info.json
+  JOURNAL_STREAM: 8:45351
+  LANG: en_US.UTF-8
+  LOGDOG_COORDINATOR_HOST: logs.chromium.org
+  LOGDOG_NAMESPACE: u/Clean_builds/postprocess_for_reclient__5_/gsutil_upload_reproxy_RPL/u
+  LOGDOG_STREAM_PREFIX: buildbucket/cr-buildbucket/8748193110146787377
+  LOGDOG_STREAM_PROJECT: chromium
+  LOGDOG_STREAM_SERVER_PATH: unix:/b/s/w/ir/x/ld/sock.2708379174
+  LOGNAME: chrome-bot
+  LUCI_CONTEXT: /b/s/w/itg044g6ws/luci_context.3124696703
+  MAC_CHROMIUM_TMPDIR: /b/s/w/ir/x/t
+  NO_GCE_CHECK: False
+  PATH: /b/s/w/ir/bbagent_utility_packages:/b/s/w/ir/bbagent_utility_packages/bin:/b/s/w/ir/cipd_bin_packages:/b/s/w/ir/cipd_bin_packages/bin:/b/s/w/ir/cipd_bin_packages/cpython3:/b/s/w/ir/cipd_bin_packages/cpython3/bin:/b/s/w/ir/cache/cipd_client:/b/s/w/ir/cache/cipd_client/bin:/b/s/cipd_cache/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+  PWD: /b/s/w/ir/x/w
+  PYTHONIOENCODING: UTF-8
+  PYTHONPATH: packages/cipd/exe/recipe_engine
+  PYTHONUNBUFFERED: 1
+  RBE_exec_strategy: racing
+  RBE_local_resource_fraction: 0.2
+  RBE_racing_bias: 0.95
+  RBE_remote_accept_cache: false
+  SHELL: /bin/bash
+  SHLVL: 0
+  SWARMING_BOT_ID: android-build-perf-developer-0-md36
+  SWARMING_EXTERNAL_BOT_SETUP: 1
+  SWARMING_HEADLESS: 1
+  SWARMING_SERVER: https://chromium-swarm.appspot.com
+  SWARMING_TASK_ID: 6982cb78b0db9511
+  SYSTEMD_EXEC_PID: 2697
+  TEMP: /b/s/w/ir/x/t
+  TEMPDIR: /b/s/w/ir/x/t
+  TMP: /b/s/w/ir/x/t
+  TMPDIR: /b/s/w/ir/x/t
+  USER: chrome-bot
+
+Step had exit code: 0 (a.k.a. 0x00000000)
+
+
+
+This is LogDog
+Rendering took 0.09s
