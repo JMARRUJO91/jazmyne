@@ -1,0 +1,17 @@
+helm repo add snyk-charts https://snyk.github.io/kubernetes-monitor --force-update
+
+helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+             --namespace snyk-monitor \
+             --set clusterName="Production cluster"
+             azureEnvVars:
+  
+    helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+  --namespace snyk-monitor \
+  -f override.yaml
+
+azureEnvVars:
+  - name: AZURE_CLIENT_ID
+    value: "7b7531ad-5926-4f2d-8a1d-38495ad33e17"
+helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+  --namespace snyk-monitor \
+  -f override.yaml
