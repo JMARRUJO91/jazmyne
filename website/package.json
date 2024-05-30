@@ -27,11 +27,6 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
 
-  "Domain": "v10.events.data.microsoft.com",
-  "Id": "103c2da2-2b49-464d-b809-7e352b9e402b"
-}
-    "remark-html": "^15.0.2",
-    "remark-mdx": "^3.0.1",
     "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
