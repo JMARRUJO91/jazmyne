@@ -1,0 +1,55 @@
+<div class="paywalled-content" data-memberful-plan-id="97AD457DF6774D6883AC9B92A3BB5F05"> 
+
+    <h2>Premium Feature</h2> 
+
+    <p>This content is available to subscribers only.</p> 
+
+</div> 
+
+document.addEventListener('DOMContentLoaded', function() { 
+
+    const paywalledElements = document.querySelectorAll('.paywalled-content'); 
+
+  
+
+    paywalledElements.forEach(element => { 
+
+        const planId = element.getAttribute('data-memberful-plan-id');  
+
+  
+
+        // Check if user has access (using Memberful's JavaScript library) 
+
+        if (!Memberful.hasActiveMembership(planId)) { 
+
+            element.style.display = 'none'; // Hide the content 
+
+  
+
+            // Create the paywall message element 
+
+            const paywallMessage = document.createElement('div'); 
+
+            paywallMessage.classList.add('paywall-message'); 
+
+            paywallMessage.innerHTML = ` 
+
+                <p>This content is for members only.</p> 
+
+                <a href="${Memberful.signupUrl(planId)}">Sign up now</a> to access this and other exclusive content! 
+
+            `; 
+
+  
+
+            // Insert the paywall message before the hidden content 
+
+            element.parentNode.insertBefore(paywallMessage, element); 
+
+        } 
+
+    }); 
+
+}); 
+
+ 
