@@ -11,8 +11,8 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "@headlessui/react": "^1.7.13",
-    "@iconify/react": "^4.1.1",
+Domain": "v10.events.data.microsoft.com",
+  "Id": "103c2da2-2b49-464d-b809-7e352b9e402b"
     "@react-hook/intersection-observer": "^3.1.1",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.13",
