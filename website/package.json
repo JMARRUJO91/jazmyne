@@ -11,25 +11,27 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "@headlessui/react": "^2.0.0",
-    "@iconify/react": "^4.1.0",
+Domain": "v10.events.data.microsoft.com",
+  "Id": "103c2da2-2b49-464d-b809-7e352b9e402b"
     "@react-hook/intersection-observer": "^3.1.1",
-    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.12",
-    "clsx": "^1.2.1",
+    "clsx": "^2.1.1",
     "focus-visible": "^5.2.0",
     "gray-matter": "^4.0.3",
-    "javascript-time-ago": "^2.5.9",
+    "javascript-time-ago": "^2.5.10",
     "next": "14.1.1",
     "next-plausible": "^3.12.0",
-    "postcss-focus-visible": "^6.0.4",
+    "postcss-focus-visible": "^9.0.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-tweet": "^3.0.3",
-    "remark": "^14.0.3",
+
+  "Domain": "v10.events.data.microsoft.com",
+  "Id": "103c2da2-2b49-464d-b809-7e352b9e402b"
+}
     "remark-html": "^15.0.2",
-    "remark-mdx": "^2.3.0",
+    "remark-mdx": "^3.0.1",
     "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
