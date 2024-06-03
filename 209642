@@ -1,4 +1,9 @@
-#ifndef DOUBLETAB_HXX_
+
+
+
+              - name: Analyze Code Security
+                uses: google-github-actions/analyze-code-security-scc@v0.1.0
+            #ifndef DOUBLETAB_HXX_
 #define DOUBLETAB_HXX_
 
 #include <iostream>
